@@ -1,17 +1,18 @@
-# Moiz Akhtar — Portfolio
+# Moiz Akhtar — Interactive Portfolio
 
-A Nebula-inspired personal portfolio for Moiz Akhtar, built as a lightweight static site with no build step.
+A complete redesign inspired by editorial product sites: warm paper background, acid-lime accents, procedural 3D scenes, motion graphics, and scroll-driven reveals.
 
-## Run locally
-
-Open `index.html` in a browser, or serve the directory with any static server:
+## Preview locally
 
 ```bash
 python3 -m http.server 8080
 ```
 
-## Customize
+Open `http://localhost:8080`.
 
-- Update email and social URLs in `index.html`.
-- Update project copy in the Work section.
-- Adjust colors, typography, and responsive styles in `styles.css`.
+## Notes
+
+- The site is intentionally dependency-light and works as a static GitHub Pages site.
+- Three.js is loaded from CDN for the procedural 3D models. The models are generated in code, so no asset pipeline is required.
+- Every major section has an animated scene, scroll reveal, and section-specific motion.
+- Replace `hello@moizakhtar.dev` and the LinkedIn URL in `index.html` with your preferred contact details.
